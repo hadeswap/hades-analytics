@@ -96,6 +96,8 @@ export async function getPool(id, client = getApollo()) {
     },
   });
 
+  console.log(pool);
+
   const {
     data: { pair: liquidityPair },
   } = await client.query({
