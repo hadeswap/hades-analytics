@@ -14,7 +14,6 @@ import {
   tokenPairsQuery,
 } from "app/core";
 
-export * from "./bar";
 export * from "./blocks";
 export * from "./exchange";
 export * from "./masterchef";

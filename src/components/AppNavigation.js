@@ -123,18 +123,6 @@ export default function AppNavigation() {
           <ListItemText primary="Dashboard" />
         </ListItem>
 
-        <ListItem
-          key="/bar"
-          button
-          selected={router.pathname === "/bar"}
-          onClick={() => router.push("/bar")}
-        >
-          <ListItemIcon>
-            <FastfoodOutlined />
-          </ListItemIcon>
-          <ListItemText primary="Bar" />
-          {/* {open ? <ExpandLess /> : <ExpandMore />} */}
-        </ListItem>
 
         {/* <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>

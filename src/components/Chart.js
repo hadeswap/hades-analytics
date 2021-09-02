@@ -12,7 +12,6 @@ import { scaleLinear, scaleTime } from "@visx/scale";
 import { useCallback, useMemo, useState } from "react";
 
 import Area from "./Area";
-import Bar from "./Bar";
 import { Brush } from "@visx/brush";
 import { Group } from "@visx/group";
 import { ParentSize } from "@visx/responsive";

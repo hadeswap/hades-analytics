@@ -10,14 +10,6 @@ export const uniswap = from([
   }),
 ]);
 
-export const bar = from([
-  new RetryLink(),
-  new HttpLink({
-    uri: "https://api.thegraph.com/subgraphs/name/matthewlilley/bar",
-    shouldBatch: true,
-  }),
-]);
-
 export const masterchef = from([
   new RetryLink(),
   new HttpLink({
@@ -62,16 +54,10 @@ export default split(
     masterchef,
     split(
       (operation) => {
-        return operation.getContext().clientName === "bar";
+        return operation.getContext().clientName === "lockup";
       },
-      bar,
-      split(
-        (operation) => {
-          return operation.getContext().clientName === "lockup";
-        },
-        lockup,
-        exchange
-      )
+      lockup,
+      exchange
     )
   )
 );
