@@ -15,7 +15,7 @@ export default function TokenIcon({ id, ...rest }) {
   const classes = useStyles();
   const src = useMemo(
     () =>
-      `https://raw.githubusercontent.com/hades-finance/assets/master/blockchains/ethereum/assets/${toChecksumAddress(
+      `https://raw.githubusercontent.com/hades-finance/assets/master/blockchains/sparta/assets/${toChecksumAddress(
         id
       )}/logo.png`,
     [id]
