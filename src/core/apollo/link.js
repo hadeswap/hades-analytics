@@ -13,7 +13,7 @@ export const uniswap = from([
 export const masterchef = from([
   new RetryLink(),
   new HttpLink({
-    uri: "https://sparta-graph.polis.tech/subgraphs/name/aether-eum/plutus3",
+    uri: "https://sparta-graph.polis.tech/subgraphs/name/hadeswap/plutus",
     shouldBatch: true,
   }),
 ]);

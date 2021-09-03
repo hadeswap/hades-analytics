@@ -171,7 +171,7 @@ function TokenPage() {
     <AppShell>
       <Head>
         <title>
-          {currencyFormatter.format(price || 0)} | {token.symbol} | SushiSwap
+          {currencyFormatter.format(price || 0)} | {token.symbol} | Hadeswap
           Analytics
         </title>
       </Head>
@@ -198,14 +198,14 @@ function TokenPage() {
           </Grid>
           <Grid item xs={12} sm="auto" className={classes.links}>
             <Link
-              href={`https://exchange.sushiswapclassic.org/#/add/${token.id}/ETH`}
+              href={`https://hadeswap-interface.vercel.app/add/${token.id}/ETH`}
               target="_blank"
               variant="body1"
             >
               Add Liquidity
             </Link>
             <Link
-              href={`https://exchange.sushiswapclassic.org/#/swap?inputCurrency=${token.id}`}
+              href={`https://hadeswap-interface.vercel.app/swap?inputCurrency=${token.id}`}
               target="_blank"
               variant="body1"
             >
@@ -297,7 +297,7 @@ function TokenPage() {
             token.name,
             token.symbol,
             token.id,
-            <Link href={`https://etherscan.io/address/${token.id}`}>View</Link>,
+            <Link href={`https://explorer.polis.tech/address/${token.id}`}>View</Link>,
           ]}
         />
       </Box>

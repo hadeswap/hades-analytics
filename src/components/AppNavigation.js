@@ -96,7 +96,7 @@ export default function AppNavigation() {
               <Sushi />
             </IconButton>
             <Typography variant="subtitle1" color="textPrimary" noWrap>
-              Sushi Analytics
+              Soul Analytics
             </Typography>
           </Box>
         </Hidden>

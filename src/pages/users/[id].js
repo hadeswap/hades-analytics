@@ -228,8 +228,8 @@ function UserPage() {
                 <TableHead>
                   <TableRow>
                     <TableCell key="pool">Pool</TableCell>
-                    <TableCell key="slp" align="right">
-                      SLP
+                    <TableCell key="hlp" align="right">
+                      HLP
                     </TableCell>
                     <TableCell key="entryUSD" align="right">
                       Deposited
@@ -262,9 +262,9 @@ function UserPage() {
                     const pair = pairs.find(
                       (pair) => pair.id == user.pool.pair
                     );
-                    const slp = Number(user.amount / 1e18);
+                    const hlp = Number(user.amount / 1e18);
 
-                    const share = slp / pair.totalSupply;
+                    const share = hlp / pair.totalSupply;
 
                     const token0 = pair.reserve0 * share;
                     const token1 = pair.reserve1 * share;
@@ -301,7 +301,7 @@ function UserPage() {
                         </TableCell>
                         <TableCell align="right">
                           <Typography noWrap variant="body2">
-                            {decimalFormatter.format(slp)} SLP
+                            {decimalFormatter.format(hlp)} HLP
                           </Typography>
                         </TableCell>
                         <TableCell align="right">

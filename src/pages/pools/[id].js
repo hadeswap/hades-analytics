@@ -95,49 +95,49 @@ function PoolPage() {
     parseFloat(token?.derivedETH) * parseFloat(bundles[0].ethPrice);
 
   const {
-    slpAge,
-    slpAgeRemoved,
+    hlpAge,
+    hlpAgeRemoved,
     userCount,
-    slpDeposited,
-    slpWithdrawn,
-    slpAgeAverage,
-    slpBalance,
+    hlpDeposited,
+    hlpWithdrawn,
+    hlpAgeAverage,
+    hlpBalance,
     tvl,
   } = poolHistories.reduce(
     (previousValue, currentValue) => {
       const date = currentValue.timestamp * 1000;
 
-      previousValue.slpAge.push({
+      previousValue.hlpAge.push({
         date,
-        value: currentValue.slpAge,
+        value: currentValue.hlpAge,
       });
 
-      const slpAgeAverage =
-        parseFloat(currentValue.slpAge) / parseFloat(currentValue.slpBalance);
+      const hlpAgeAverage =
+        parseFloat(currentValue.hlpAge) / parseFloat(currentValue.hlpBalance);
 
-      previousValue.slpAgeAverage.push({
+      previousValue.hlpAgeAverage.push({
         date,
-        value: !Number.isNaN(slpAgeAverage) ? slpAgeAverage : 0,
+        value: !Number.isNaN(hlpAgeAverage) ? hlpAgeAverage : 0,
       });
 
-      previousValue.slpAgeRemoved.push({
+      previousValue.hlpAgeRemoved.push({
         date,
-        value: currentValue.slpAgeRemoved,
+        value: currentValue.hlpAgeRemoved,
       });
 
-      previousValue.slpBalance.push({
+      previousValue.hlpBalance.push({
         date,
-        value: parseFloat(currentValue.slpBalance),
+        value: parseFloat(currentValue.hlpBalance),
       });
 
-      previousValue.slpDeposited.push({
+      previousValue.hlpDeposited.push({
         date,
-        value: parseFloat(currentValue.slpDeposited),
+        value: parseFloat(currentValue.hlpDeposited),
       });
 
-      previousValue.slpWithdrawn.push({
+      previousValue.hlpWithdrawn.push({
         date,
-        value: parseFloat(currentValue.slpWithdrawn),
+        value: parseFloat(currentValue.hlpWithdrawn),
       });
 
       previousValue.tvl.push({
@@ -145,7 +145,7 @@ function PoolPage() {
         value:
           (parseFloat(pool.liquidityPair.reserveUSD) /
             parseFloat(pool.liquidityPair.totalSupply)) *
-          parseFloat(currentValue.slpBalance),
+          parseFloat(currentValue.hlpBalance),
       });
 
       previousValue.userCount.push({
@@ -158,12 +158,12 @@ function PoolPage() {
     {
       entries: [],
       exits: [],
-      slpAge: [],
-      slpAgeAverage: [],
-      slpAgeRemoved: [],
-      slpBalance: [],
-      slpDeposited: [],
-      slpWithdrawn: [],
+      hlpAge: [],
+      hlpAgeAverage: [],
+      hlpAgeRemoved: [],
+      hlpBalance: [],
+      hlpDeposited: [],
+      hlpWithdrawn: [],
       tvl: [],
       userCount: [],
     }
@@ -172,7 +172,7 @@ function PoolPage() {
   return (
     <AppShell>
       <Head>
-        <title>Pool {id} | SushiSwap Analytics</title>
+        <title>Pool {id} | Hadeswap Analytics</title>
       </Head>
 
       <PageHeader mb={3}>
@@ -197,16 +197,11 @@ function PoolPage() {
           </Grid>
           <Grid item xs={12} sm="auto" className={classes.links}>
             <Link
-              href={`https://sushiswapclassic.org/farms/${
-                pool.liquidityPair.token0.symbol
-              }-${pool.liquidityPair.token1.symbol.replace(
-                "WETH",
-                "ETH"
-              )}%20SLP`}
+              href={`https://hadeswap-interface.vercel.app/yield`}
               target="_blank"
               variant="body1"
             >
-              Stake SLP
+              Stake HLP
             </Link>
           </Grid>
         </Grid>
@@ -226,9 +221,9 @@ function PoolPage() {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
           <KPI
-            title="~ SLP Age"
+            title="~ HLP Age"
             value={`${(
-              parseFloat(pool.slpAge) / parseFloat(pool.balance / 1e18)
+              parseFloat(pool.hlpAge) / parseFloat(pool.balance / 1e18)
             ).toFixed(2)} Days`}
           />
         </Grid>
@@ -238,7 +233,7 @@ function PoolPage() {
         <Grid item xs={12} sm={4}>
           <KPI
             title="Staked"
-            value={`${(pool.balance / 1e18).toFixed(4)} SLP`}
+            value={`${(pool.balance / 1e18).toFixed(4)} HLP`}
           />
         </Grid>
         {/* <Grid item xs={12} sm={4}>
@@ -290,8 +285,8 @@ function PoolPage() {
                   width={width}
                   height={height}
                   margin={{ top: 64, right: 32, bottom: 0, left: 64 }}
-                  data={[slpAge, slpAgeRemoved]}
-                  labels={["SLP Age", "SLP Age Removed"]}
+                  data={[hlpAge, hlpAgeRemoved]}
+                  labels={["HLP Age", "HLP Age Removed"]}
                 />
               )}
             </ParentSize>
@@ -313,8 +308,8 @@ function PoolPage() {
                   width={width}
                   height={height}
                   margin={{ top: 64, right: 32, bottom: 0, left: 64 }}
-                  data={[slpDeposited, slpWithdrawn]}
-                  labels={["SLP Deposited", "SLP Age Withdrawn"]}
+                  data={[hlpDeposited, hlpWithdrawn]}
+                  labels={["HLP Deposited", "HLP Age Withdrawn"]}
                 />
               )}
             </ParentSize>
@@ -334,11 +329,11 @@ function PoolPage() {
             <ParentSize>
               {({ width, height }) => (
                 <Curves
-                  title="~ SLP Age (Days)"
+                  title="~ HLP Age (Days)"
                   width={width}
                   height={height}
                   margin={{ top: 64, right: 32, bottom: 0, left: 64 }}
-                  data={[slpAgeAverage]}
+                  data={[hlpAgeAverage]}
                 />
               )}
             </ParentSize>
@@ -382,11 +377,11 @@ function PoolPage() {
             <ParentSize>
               {({ width, height }) => (
                 <Curves
-                  title="SLP Balance"
+                  title="HLP Balance"
                   width={width}
                   height={height}
                   margin={{ top: 64, right: 32, bottom: 0, left: 64 }}
-                  data={[slpBalance]}
+                  data={[hlpBalance]}
                 />
               )}
             </ParentSize>

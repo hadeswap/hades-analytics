@@ -156,7 +156,7 @@ export async function getPools(client = getApollo()) {
 
   // SOUL TOKEN
   const { token } = await getToken(
-    "0xc9Ec2EDD1BA38918a55B5ab637dd0Ac02e6e4058"
+    "0xc9ec2edd1ba38918a55b5ab637dd0ac02e6e4058"
   );
 
   const sushiPrice = ethPrice * token.derivedETH;
