@@ -181,7 +181,7 @@ function UserPage() {
           Portfolio {id}
         </Typography>
       </PageHeader>
-      )}
+
 
       <Typography
         variant="h6"
