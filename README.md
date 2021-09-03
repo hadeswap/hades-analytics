@@ -17,3 +17,4 @@ Add your logo by opening a PR against hadeswap/assets
 ## Licence
 
 MIT
+
