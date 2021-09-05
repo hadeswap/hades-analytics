@@ -3,17 +3,14 @@ import {
   AreaChart,
   BarChart,
   BasicTable,
-  Chart,
-  IntoTheBlock,
   KPI,
   Link,
   PageHeader,
   PairIcon,
-  Percent,
   TokenIcon,
   Transactions,
 } from "app/components";
-import { Avatar, Box, Chip, Grid, Paper, Typography } from "@material-ui/core";
+import { Box, Grid, Paper, Typography } from "@material-ui/core";
 import {
   ethPriceQuery,
   formatCurrency,
@@ -407,9 +404,6 @@ function PairPage(props) {
             <Link href={`https://explorer.polis.tech/address/${pair.id}`}>View</Link>,
           ]}
         />
-      </Box>
-      <Box my={4}>
-        <IntoTheBlock pairAddress={pair.id} />
       </Box>
       <Box my={4}>
         <Transactions transactions={transactions} txCount={pair.txCount} />

@@ -19,7 +19,6 @@ import {
 import React, { useState } from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-import Sushi from "./Sushi";
 import clsx from "clsx";
 import { darkModeVar } from "app/core";
 import useDetect from "../core/hooks/useDetect";
@@ -138,8 +137,8 @@ export default function AppBar({
               alignItems="center"
               justifyContent="space-around"
             >
-              <IconButton edge={false} onClick={() => router.push("/")}>
-                <Sushi />
+              <IconButton edge={false} onClick={() => router.push("/")} style={{"marginRight":"5px"}} width="40px">
+               <img src={"/logo.png"} height="30px" alt={"HadeSwap"}/>
               </IconButton>
               <Typography variant="subtitle1" color="textPrimary" noWrap>
                 Hadeswap Analytics
