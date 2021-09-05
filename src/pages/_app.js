@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{process.env.NEXT_PUBLIC_APP_NAME}</title>
+        <title>Hadeswap Analytics</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

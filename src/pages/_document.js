@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
 
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-          <meta name="application-name" content={process.env.APP_NAME} />
+          <meta name="application-name" content="Hadeswap Analytics" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -23,16 +23,15 @@ export default class MyDocument extends Document {
           />
           <meta
             name="apple-mobile-web-app-title"
-            content={process.env.APP_NAME}
+            content="Hadeswap Analytics"
           />
 
           <meta
             name="description"
-            content={process.env.NEXT_PUBLIC_APP_DESCRIPTION}
+            content="Analytics for Hadeswap"
           />
           <meta
             name="keywords"
-            content={process.env.NEXT_PUBLIC_APP_KEYWORDS}
           />
 
           <link
@@ -82,24 +81,24 @@ export default class MyDocument extends Document {
 
           {/* TWITTER */}
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:url" content={process.env.APP_URL} />
-          <meta name="twitter:title" content={process.env.APP_NAME} />
+          <meta name="twitter:url" content="https://analytics.hadeswap.finance" />
+          <meta name="twitter:title" content="Hadeswap Analytics" />
           <meta
             name="twitter:description"
-            content={process.env.APP_DESCRIPTION}
+            content="Analytics for Hadeswap"
           />
           <meta name="twitter:image" content="/android-chrome-192x192.png" />
           <meta name="twitter:creator" content="@MatthewLilley" />
 
           {/* FACEBOOK */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content={process.env.APP_NAME} />
+          <meta property="og:title" content="Hadeswap Analytics" />
           <meta
             property="og:description"
-            content={process.env.APP_DESCRIPTION}
+            content="Analytics for Hadeswap"
           />
-          <meta property="og:site_name" content={process.env.APP_NAME} />
-          <meta property="og:url" content={process.env.APP_URL} />
+          <meta property="og:site_name" content="Hadeswap Analytics" />
+          <meta property="og:url" content="https://analytics.hadeswap.finance" />
           <meta property="og:image" content="/apple-touch-icon.png" />
           <script
             type="text/javascript"
@@ -130,7 +129,7 @@ export default class MyDocument extends Document {
                 try {
                   var query = window.matchMedia("(prefers-color-scheme: dark)");
                   var darkMode = window.localStorage.getItem("darkMode") === "true";
-                
+
                   if (darkMode) {
                     document.documentElement.classList.add("dark-theme");
                   }
