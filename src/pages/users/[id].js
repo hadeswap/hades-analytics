@@ -87,7 +87,7 @@ function UserPage() {
     data: { token },
   } = useQuery(tokenQuery, {
     variables: {
-      id: "0xc9ec2edd1ba38918a55b5ab637dd0ac02e6e4058",
+      id: "0xf1498e8103359fd96c5e08fb34b4c249b619025a",
     },
   });
 

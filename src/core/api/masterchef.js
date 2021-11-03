@@ -158,7 +158,7 @@ export async function getPools(client = getApollo()) {
 
   // SOUL TOKEN
   const { token } = await getToken(
-    "0xc9ec2edd1ba38918a55b5ab637dd0ac02e6e4058"
+    "0xf1498e8103359fd96c5e08fb34b4c249b619025a"
   );
 
   const sushiPrice = ethPrice * token.derivedETH;
@@ -168,7 +168,7 @@ export async function getPools(client = getApollo()) {
     data: { liquidityPositions },
   } = await client.query({
     query: liquidityPositionSubsetQuery,
-    variables: { user: "0xb4be34c7430ff011b653166570e211c15a03e4fa" },
+    variables: { user: "0x342bffa41d7120c2c3ed746f80286ecd025272c5" },
   });
 
   await client.cache.writeQuery({

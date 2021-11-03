@@ -198,7 +198,7 @@ function PairPage(props) {
           </Box>
           <Box display="flex" alignItems="center" className={classes.links}>
             <Link
-              href={`https://hadeswap-interface.vercel.app/add/${pair.token0.id}/${pair.token1.id}`}
+              href={`https://hadeswap.finance/add/${pair.token0.id}/${pair.token1.id}`}
               target="_blank"
               variant="body1"
               className={classes.firstLink}
@@ -206,7 +206,7 @@ function PairPage(props) {
               Add Liquidity
             </Link>
             <Link
-              href={`https://hadeswap-interface.vercel.app/swap?inputCurrency=${pair.token0.id}&outputCurrency=${pair.token1.id}`}
+              href={`https://hadeswap.finance/swap?inputCurrency=${pair.token0.id}&outputCurrency=${pair.token1.id}`}
               target="_blank"
               variant="body1"
             >

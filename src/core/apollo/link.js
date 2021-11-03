@@ -13,7 +13,7 @@ export const uniswap = from([
 export const masterchef = from([
   new RetryLink(),
   new HttpLink({
-    uri: "https://sparta-graph.polis.tech/subgraphs/name/hadeswap/plutus",
+    uri: "https://graph.polis.tech/subgraphs/name/hadeswap/plutus",
     shouldBatch: true,
   }),
 ]);
@@ -21,7 +21,7 @@ export const masterchef = from([
 export const exchange = from([
   new RetryLink(),
   new HttpLink({
-    uri: "https://sparta-graph.polis.tech/subgraphs/name/hadeswap/exchange",
+    uri: "https://graph.polis.tech/subgraphs/name/hadeswap/exchange",
     shouldBatch: true,
   }),
 ]);
@@ -29,7 +29,7 @@ export const exchange = from([
 export const blocklytics = from([
   new RetryLink(),
   new HttpLink({
-    uri: "https://sparta-graph.polis.tech/subgraphs/name/blocklytics/ethereum-blocks",
+    uri: "https://graph.polis.tech/subgraphs/name/blocklytics/ethereum-blocks",
     shouldBatch: true,
   }),
 ]);
