@@ -23,7 +23,7 @@ function RecentPoolsPage() {
   return (
     <AppShell>
       <Head>
-        <title>Recently Added Pools | Hadeswap Analytics</title>
+        <title>Recently Added Pools | Hades Swap Analytics</title>
       </Head>
       <PoolTable
         title="Recently Added Pools"

@@ -172,7 +172,7 @@ function PoolPage() {
   return (
     <AppShell>
       <Head>
-        <title>Pool {id} | Hadeswap Analytics</title>
+        <title>Pool {id} | Hades Swap Analytics</title>
       </Head>
 
       <PageHeader mb={3}>

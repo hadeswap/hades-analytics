@@ -138,10 +138,10 @@ export default function AppBar({
               justifyContent="space-around"
             >
               <IconButton edge={false} onClick={() => router.push("/")} style={{"marginRight":"5px"}} width="40px">
-               <img src={"/logo.png"} height="30px" alt={"HadeSwap"}/>
+               <img src={"/logo.png"} height="30px" alt={"Hades Swap"}/>
               </IconButton>
               <Typography variant="subtitle1" color="textPrimary" noWrap>
-                Hadeswap Analytics
+                Hades Swap Analytics
               </Typography>
             </Box>
           </Hidden>

@@ -19,7 +19,7 @@ function PoolsPage() {
   return (
     <AppShell>
       <Head>
-        <title>Pools | Hadeswap Analytics</title>
+        <title>Pools | Hades Swap Analytics</title>
       </Head>
       <PoolTable
         pools={pools}

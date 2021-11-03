@@ -22,7 +22,7 @@ function RecentPairsPage() {
   return (
     <AppShell>
       <Head>
-        <title>Recently Added Pairs | Hadeswap Analytics</title>
+        <title>Recently Added Pairs | Hades Swap Analytics</title>
       </Head>
       <PairTable pairs={pairs} orderBy="timestamp" order="desc" />
     </AppShell>

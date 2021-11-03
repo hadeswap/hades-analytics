@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
 
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-          <meta name="application-name" content="Hadeswap Analytics" />
+          <meta name="application-name" content="Hades Swap Analytics" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -22,12 +22,12 @@ export default class MyDocument extends Document {
           />
           <meta
             name="apple-mobile-web-app-title"
-            content="Hadeswap Analytics"
+            content="Hades Swap Analytics"
           />
 
           <meta
             name="description"
-            content="Analytics for Hadeswap"
+            content="Analytics for Hades Swap"
           />
           <meta
             name="keywords"
@@ -81,22 +81,22 @@ export default class MyDocument extends Document {
           {/* TWITTER */}
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://analytics.hadeswap.finance" />
-          <meta name="twitter:title" content="Hadeswap Analytics" />
+          <meta name="twitter:title" content="Hades Swap Analytics" />
           <meta
             name="twitter:description"
-            content="Analytics for Hadeswap"
+            content="Analytics for Hades Swap"
           />
           <meta name="twitter:image" content="/android-chrome-192x192.png" />
           <meta name="twitter:creator" content="@MatthewLilley" />
 
           {/* FACEBOOK */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Hadeswap Analytics" />
+          <meta property="og:title" content="Hades Swap Analytics" />
           <meta
             property="og:description"
-            content="Analytics for Hadeswap"
+            content="Analytics for Hades Swap"
           />
-          <meta property="og:site_name" content="Hadeswap Analytics" />
+          <meta property="og:site_name" content="Hades Swap Analytics" />
           <meta property="og:url" content="https://analytics.hadeswap.finance" />
           <meta property="og:image" content="/apple-touch-icon.png" />
         </Head>

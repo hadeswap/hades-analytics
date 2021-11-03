@@ -185,7 +185,7 @@ function PairPage(props) {
     <AppShell>
       <Head>
         <title>
-          {pair.token0.symbol}-{pair.token1.symbol} | Hadeswap Analytics
+          {pair.token0.symbol}-{pair.token1.symbol} | Hades Swap Analytics
         </title>
       </Head>
       <PageHeader>

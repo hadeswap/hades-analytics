@@ -83,7 +83,7 @@ function IndexPage() {
   return (
     <AppShell>
       <Head>
-        <title>Dashboard | Hadeswap Analytics</title>
+        <title>Dashboard | Hades Swap Analytics</title>
       </Head>
       <Box mb={3}>
         <Search pairs={pairs} tokens={tokens} />

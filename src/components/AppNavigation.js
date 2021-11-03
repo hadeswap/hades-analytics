@@ -92,7 +92,7 @@ export default function AppNavigation() {
         <Hidden smUp implementation="css">
           <Box display="flex" alignItems="center" py={0.5}>
             <IconButton edge={false} onClick={() => router.push("/")}>
-              <img src={"/logo.png"} height="30px" alt={"HadeSwap"}/>
+              <img src={"/logo.png"} height="30px" alt={"Hades Swap"}/>
             </IconButton>
             <Typography variant="subtitle1" color="textPrimary" noWrap>
               Soul Analytics

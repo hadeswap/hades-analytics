@@ -1,6 +1,6 @@
-# Hadeswap Analytics
+# Hades Swap Analytics
 
-Hadeswap Analytics is a progressive web application for the Hadeswap Protocol.
+Hades Swap Analytics is a progressive web application for the Hades Swap Protocol.
 
 ## Getting started
 

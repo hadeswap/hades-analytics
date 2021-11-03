@@ -19,7 +19,7 @@ export default function AppFooter() {
           <Typography variant="body2" color="textSecondary" align="center">
             {"Copyright © "}
             <MuiLink color="inherit" href="/">
-              Hadeswap Analytics
+              Hades Swap Analytics
             </MuiLink>{" "}
             {new Date().getFullYear()}
             {"."}

@@ -171,7 +171,7 @@ function TokenPage() {
     <AppShell>
       <Head>
         <title>
-          {currencyFormatter.format(price || 0)} | {token.symbol} | Hadeswap
+          {currencyFormatter.format(price || 0)} | {token.symbol} | Hades Swap
           Analytics
         </title>
       </Head>
