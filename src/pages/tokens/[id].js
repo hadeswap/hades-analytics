@@ -198,14 +198,14 @@ function TokenPage() {
           </Grid>
           <Grid item xs={12} sm="auto" className={classes.links}>
             <Link
-              href={`https://hadeswap.interface/add/${token.id}/ETH`}
+              href={`https://hadesswap.finance/add/${token.id}/ETH`}
               target="_blank"
               variant="body1"
             >
               Add Liquidity
             </Link>
             <Link
-              href={`https://hadeswap.interface/swap?inputCurrency=${token.id}`}
+              href={`https://hadesswap.finance/swap?inputCurrency=${token.id}`}
               target="_blank"
               variant="body1"
             >
