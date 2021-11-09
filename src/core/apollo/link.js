@@ -29,7 +29,7 @@ export const exchange = from([
 export const blocklytics = from([
   new RetryLink(),
   new HttpLink({
-    uri: "https://graph.polis.tech/subgraphs/name/blocklytics/ethereum-blocks2",
+    uri: "https://graph.polis.tech/subgraphs/name/blocklytics/ethereum-blocks",
     shouldBatch: true,
   }),
 ]);
