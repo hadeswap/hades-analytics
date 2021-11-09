@@ -80,7 +80,7 @@ export default class MyDocument extends Document {
 
           {/* TWITTER */}
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:url" content="https://analytics.hadeswap.finance" />
+          <meta name="twitter:url" content="https://analytics.hadesswap.finance" />
           <meta name="twitter:title" content="Hades Swap Analytics" />
           <meta
             name="twitter:description"
@@ -97,7 +97,7 @@ export default class MyDocument extends Document {
             content="Analytics for Hades Swap"
           />
           <meta property="og:site_name" content="Hades Swap Analytics" />
-          <meta property="og:url" content="https://analytics.hadeswap.finance" />
+          <meta property="og:url" content="https://analytics.hadesswap.finance" />
           <meta property="og:image" content="/apple-touch-icon.png" />
         </Head>
         <body className="no-js">

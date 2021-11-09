@@ -197,7 +197,7 @@ function PoolPage() {
           </Grid>
           <Grid item xs={12} sm="auto" className={classes.links}>
             <Link
-              href={`https://hadeswap.finance/yield`}
+              href={`https://hadesswap.finance/yield`}
               target="_blank"
               variant="body1"
             >
