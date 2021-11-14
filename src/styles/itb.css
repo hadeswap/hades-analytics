@@ -74,22 +74,22 @@
 }
 
 .highlight-container .title {
-  border-bottom: 2px solid #b93cf6 !important;
+  border-bottom: 2px solid #23AAE2 !important;
 }
 
 .itb-widget .see-more-link a.call-to-action {
-  background: #b93cf6 !important;
+  background: #23AAE2 !important;
 }
 
 .itb-widget .defi-card .button {
-  color: #b93cf6 !important;
-  border: 1px solid #b93cf6;
+  color: #23AAE2 !important;
+  border: 1px solid #23AAE2;
   background: transparent;
 }
 
 .itb-widget .button:hover {
   color: white !important;
-  background: #b93cf6 !important;
+  background: #23AAE2 !important;
 }
 
 .widget-container .footer {
